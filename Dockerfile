@@ -6,4 +6,3 @@ RUN echo '{ "posts": [ { "id": 1, "title": "json-server", "author": "typicode" }
 RUN npm install -g json-server
 
 CMD ["json-server", "--watch", "db.json"]
-
