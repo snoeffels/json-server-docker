@@ -1,0 +1,13 @@
+services:
+  json-server:
+    build:
+      context: .
+      network: host
+    image: json-server
+    container_name: json-server
+    volumes: 
+      - ./db.json:/app/db.json
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "8080:3000"
