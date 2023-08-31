@@ -7,7 +7,5 @@ services:
     container_name: json-server
     volumes: 
       - ./db.json:/app/db.json
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
     ports:
       - "80:3000"
